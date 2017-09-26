@@ -5,30 +5,86 @@
   <link rel="stylesheet" type="text/css" href="Laybrhome.css">
 </head>
   <body>
-    <div class = "top_panel">
-      <h1 class = "top_text">Welcome to Laybr</h1>
+    <div id = "screen"></div>
+    <div id  = "CV" class = "modal">
+      <h2>Culture and Values</h2>
+      <p>Our culture is that we are basically Uber but maybe <br> a little cooler, not by much though. <br> We value hardwork, and admire the philosophy of "work hard, play hard."</p>
     </div>
-    <div class = "big_panel">
-      <div class = "livefeed_box">
-        <h1>livefeed_box</h1>
-        <div class = "livefeed_title">
-          <h1>Laybrs</h1>
+    <div id = "Laybrers" class = "modal">
+      <h2>Laybrers</h2>
+      <p>A professional Labyrer is unlikely to make much money, we do not <br>recommend doing this fulltime, it is just supposed to be <br> a side gig, so don't go overboard with it.</p>
+    </div>
+    <div id = "Careers" class = "modal">
+      <h2>Careers</h2>
+      <p>If you want to join the team, and help develop Laybr, we have openings for a marketing intern, social media intern, as well as muiltiple positions in I-Phone application development and web app development.  Experience is required, pay is not guaranteed. </p>
+    </div>
+    <div class = "sticky">
+      <ul class = "sticky_buttons">
+        <li class = "sticky_button">
+          <h1 id = "topbtn">Laybr</h1>
+        </li>
+        <li class = "sticky_button">
+          <h1 id = "aboutbtn">About</h1>
+        </li>
+        <li class = "sticky_button">
+          <h1 id = "contactbtn">Contact Us</h1>
+        </li>
+      </ul>
+    </div>
+    <div id = "tp">
+      <h1 class = "header">Laybr</h1>
+      <p id = "descript">Your Destination for Peer-to-Peer Tasking
+      </p>
+    </div>
+    <div id = "About">
+      <h1 id = "About_Header">About</h1>
+      <div class = "Text_box">
+          <p id = "About_text">
+            Laybr is the platform to use when you have a task that needs to be done, <br> and need to find someone to do it.
+            Laybr allows you to find someone to get this task done, in an intuitive and easy to use way.  Our focus is on three main categories: Tutoring, Fitness, and Physical Labor.  Tasks can be posted in these three categories and can be fulfilled by anyone.
+          </p>
+      </div>
+    </div>
+    <div class = "ThreeBoxes">
+      <div id = "box1" class = "box">
+        <h3>Culture and Values</h3>
+        <div class = "liltextbox">
+          <p id="box1btn">
+            Learn more about who we <br>are and what we are about.
+          </p>
         </div>
       </div>
-      <div class = "Laybr_panel">
-        <h1 class = "Laybr_panel_text">Choose Your Laybr</h1>
-        <ul class = "choose_laybr_menu">
-          <li class = "choose_labyr_button"> Fitness</li>
-          <li class = "choose_labyr_button"> Moving</li>
-          <li class = "choose_labyr_button"> School</li>
-        </ul>
+      <div id = "box2" class = "box">
+        <h3>Labyrers</h3>
+        <div class = "liltextbox">
+          <p>
+            How to succeed and thrive <br>as a self-employed Laybrer
+          </p>
+        </div>
       </div>
-      <div class = "livefeed_box2">
-        <h1>livefeed_box2</h1>
-        <div class = "livefeed_title">
-          <h1>Offers</h1>
+      <div id = "box3" class = "box">
+        <h3>Careers</h3>
+        <div class = "liltextbox">
+          <p>
+            Learn how you can join <br>the Laybr team
+          </p>
         </div>
       </div>
     </div>
+    <div id = "Contact_Box">
+      <h1>Contact Us</h1>
+      <p class = "Contact_text">You can reach us with any questions, comments, or concerns at labyr.labs@gmail.com</p>
+    </div>
+    <div id = "thevideo">
+      <h1 id = "videotext">Join Laybr Today</h1>
+      <video width = 100% height = auto autoplay loop>
+        <source src = "assets/city.mp4" type = "video/mp4">
+      </video>
+    </div>
+    <div id = "footer">
+      <h1>© Laybr Labs Inc.</h1>
+    </div>
+    
+    <script type = "text/javascript" src = "Laybrhome.js"></script>
   </body>
 </html>

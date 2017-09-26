@@ -1,96 +1,190 @@
 body{
   padding: 0;
   margin: 0;
-  background-color: #ffffff;
+  background-color: #146cc7;
 }
-div {
+/*
+div{
     border: 1px solid #000000;
 }
-.top_panel{
-  position: relative;
-  /*z-index: 1;*/
-  height: 80px;
-  background-color: #2398ff;
+*/
+#screen{
+  display: none;
   width: 100%;
-  /*position: relative;*/
-  left: 0;
-  top: 0;
-  margin: 0;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, .6);
+  z-index: 1;
+  position: fixed;
+}
+#tp{
+  display: flex;
+  justify-content: center;
+  height: 600px;
+  text-align: center;
+  flex-direction: column;
+  background-image: url("https://i.gse.io/gse_media/116/6/1469829447-Chicago_Skyline_Cruise_All_White_Boat_Party_tickets.jpg?p=1");
+  background-attachment: fixed;
+}
+.modal{
+  display: none;
+  position: fixed;
+  text-align: center;
+  z-index: 2;
+  width: 100%;
+  height: 200px;
+  top: 100px;
+  background-color: rgba(255, 255, 255, .7);
+  color: black;
+}
+.header{
+  text-align: center;
+  vertical-align: middle;
+  font-family: sans-serif;
+  letter-spacing: 16px;
+  font-size: 128px;
+  color: white;
+  animation-name: fadein;
+  animation-duration: 5s;
+}
+@keyframes fadein{
+  from{
+    color: rgba(255, 255, 255, 0);
+  }
+  to{
+    color: rgba(255, 255, 255, 1);
+  } 
+}
+.sticky{
+  position: fixed;
+  background-color: rgb(5, 68, 103);
+  width: 100%;
   padding: 0;
-  /*position: fixed;*/
+  margin: 0;
+  color: white;
+  z-index: 1;
+}
+.sticky_buttons{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+
+}
+.sticky_button{
+  float: left;
 }
 
-.top_text{
-  position: relative;
-  text-align: center;
-  vertical-align: middle;
-  top: 0;
-  width: 100%;
-  font-size: 30;
-  color: #E6DCDC;
-}
-.big_panel{
-  position: relative;
-  background-color: #7dff31;
-  width: 100%;
-  height: 100%;
-  padding: 0;
-  margin: 0;
-}
-.livefeed_box{
-  position: relative;
-  background-color: #c78840;
-  height: 100%;
-  width: 20%;
-  float: left;
-  margin: 0;
-}
-.livefeed_box2{
-  position: relative;
-  background-color: #c78840;
-  height: 100%;
-  width: 20%;
-  float: right;
-}
-.livefeed_title{
-  position: relative;
-  background-color: #785125;
-}
-.Laybr_panel{
-  position: relative;
-  /*vertical-align: middle;*/
-  margin-left: auto;
-  margin-right: auto;
-  width: 25%;
-  height: 100%;
-  float:left;
-  background-color: #23ffa7;
-}
-.Laybr_panel_text{
-  position: relative;
-  text-align: center;
-  font-size: 20;
-}
-.choose_laybr_menu{
-  border: 1px solid #000000;
-  position: relative;
-  /*margin-left: auto;
-  margin-right: auto;*/
-  text-align: center;
-  vertical-align: middle;
-  padding: 0;
-  margin: 0;
-}
-.choose_labyr_button{
-  border: 1px solid #000000;
-  list-style-type: none;
-  background-color: #25c437;
+.sticky_button h1{
   display: block;
-  height: 20.0%;
-  font-size: 28px;
-  padding: 0;
-  margin: 0;
+  text-align: center;
+  color: inherit;
+  text-decoration: none;
+  padding: 10px 10px;
+  font-size: 20px;
 }
-.choose_labyr_button:hover{
-  background-color: blue;
+.sticky_button h1:hover{
+  background-color: rgb(4, 42, 64);
+  cursor: pointer;
+}
+#descript{
+  font-size: 32px;
+  font-family: sans-serif;
+  color: white;
+  animation-name: fadein;
+  animation-duration: 5s;
+}
+#About_Header{
+  font-family: sans-serif;
+}
+#About_text{
+  font-size: 20px;
+}
+@keyframes slidein{
+  from{
+    margin-left: 100%;
+    width: 100%;
+    color: rgba(255, 255, 255, 0);
+  }
+  to{
+    margin-left: 0%;
+    width: 100%;
+    color: rgba(255, 255, 255, 1);
+  } 
+}
+#About{
+  color: white;
+  animation-name: slidein;
+  animation-duration: 4s;
+  text-align: center;
+  height: 300px;
+/*  background-color: rgba(5, 68, 103, .7);*/
+}
+.Text_box{
+  width: 50%;
+  margin:auto;
+  padding: 0;
+}
+.box{
+  width: 33.3%;
+  text-align: center;
+  font-family: sans-serif;
+  height: 200px;
+  background-color: rgb(5, 68, 103);
+  display: block;
+  float:left;
+}
+.liltextbox{
+  background-color: rgba(173, 173, 173, .5);
+  width: 66%;
+  margin: auto;
+  border-radius: 25px;
+}
+.liltextbox p{
+  display: block;
+}
+.liltextbox p:hover{
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+#box1{
+  background-image: url(http://www.compassionateleadership.ca/wp-content/uploads/2012/10/values-based-culture-550x340.png);
+}
+#box2{
+  background-image: url(https://paradigmmalibu.com/wp-content/uploads/2014/03/6-advantages-of-online-tutoring.jpeg);
+  background-size:100%;
+  background-repeat: no-repeat;
+}
+#box3{
+  background-image: url(https://media.glassdoor.com/l/ac/21/be/79/software-developer-s-desk.jpg);
+  background-size: 100%;
+}
+#Contact_Box{
+  height: 350px;
+  color: white;
+  text-align: center;
+}
+.Contact_text{
+  font-size: 24px;
+}
+.thevideo{
+  position: relative;
+  width: 100%;
+  height: 200px;
+}
+#videotext{
+  position:relative;
+  z-index: 0;
+  text-align: center;
+  margin: auto;
+  top: 100px;
+  font-size: 72px;
+  color: white;
+  font-family: sans-serif;
+  
+}
+#footer{
+  border: 3px solid #000;
+  background-color: rgb(5, 68, 103);
+  color: white;
+  top: 0;
 }
